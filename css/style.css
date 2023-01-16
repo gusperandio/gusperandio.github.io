@@ -8,7 +8,7 @@
 
 /*? Variaveis */
 
-:root{
+:root {
     --main-color: #151B21;
     --main-text-color: #fff;
     --border-color: #999;
@@ -19,18 +19,18 @@
 
 /*? General */
 
-.highlight{
+.highlight {
     color: var(--main-color)
 }
 
 /*? Containers */
-#container{
+#container {
     display: flex;
     flex-direction: row;
     color: var(--main-text-color)
 }
 
-#bio-container{
+#bio-container {
     flex: 1 1 20%;
     min-height: 100vh;
     background-color: var(--main-color);
@@ -47,26 +47,26 @@
     padding: 50px;
 }
 
-#bio-container h2{
+#bio-container h2 {
     margin-bottom: 2rem;
 }
 
-#bio-container p{
+#bio-container p {
     margin-bottom: 2rem;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
-#img-profile{
+#img-profile {
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
     margin-bottom: 1.5rem;
 }
 
-#social-container{
+#social-container {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -75,33 +75,33 @@
     padding-bottom: 1.5rem;
 }
 
-#social-container li{
+#social-container li {
     flex: 1 1 0;
     max-width: 4rem;
 }
 
-#social-container li a{
+#social-container li a {
     color: var(--main-text-color);
     font-size: 2rem;
 }
 
-#email-container{
+#email-container {
     display: flex;
     justify-content: center;
 }
 
 #email-container ion-icon,
-#email-container a{
+#email-container a {
     flex: 1 1 0;
 }
 
-#email-container a{
+#email-container a {
     color: var(--main-text-color);
     text-decoration: none;
     max-width: 14rem;
 }
 
-#email-container ion-icon{
+#email-container ion-icon {
     color: var(--main-text-color);
     font-size: 1.5rem;
     margin-right: 0.4rem;
@@ -110,28 +110,28 @@
 
 /* Container */
 
-#name{
+#name {
     font-size: 2.6rem;
     margin-bottom: 1rem;
 }
 
-#title{
+#title {
     font-size: 24px;
     margin-bottom: 15px;
     font-weight: bold;
 }
 
-.description{
+.description {
     max-width: 75%;
     margin-bottom: 1rem;
 }
 
 
-#btn-project{
+#btn-project {
     font-weight: bold;
     font-size: 1rem;
     color: var(--main-text-color);
-    background-color:dodgerblue ;
+    background-color: dodgerblue;
     border: 2px solid dodgerblue;
     border-radius: 5px;
     text-decoration: none;
@@ -144,39 +144,39 @@
 }
 
 #btn-project ion-icon,
-#btn-project span{ 
+#btn-project span {
     flex: 1 1 0;
 }
 
-#btn-project ion-icon{ 
+#btn-project ion-icon {
     font-size: 1.2rem;
     max-width: 1.2rem;
 }
 
-#btn-project:hover{
+#btn-project:hover {
     background-color: transparent;
 }
 
-#skill-section-title{
+#skill-section-title {
     border-top: 1px solid var(--border-color);
     padding-top: 1.2rem;
     margin-bottom: 1.2rem;
     font-size: 2rem;
 }
 
-#skills-container{
+#skills-container {
     display: flex;
     flex-wrap: wrap;
     margin-top: 1.5rem;
 }
 
-.skills-box{
+.skills-box {
     flex: 1 1 33%;
     max-width: 33%;
     margin-bottom: 2.5rem;
 }
 
-.skills-title{
+.skills-title {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     font-weight: bold;
@@ -184,50 +184,50 @@
     border-left: 5px solid dodgerblue;
 }
 
-.skills-box i{
+.skills-box i {
     font-size: 2.5rem;
 }
 
 
 /* Mobile */
 
-@media(max-width: 28.1rem){
+@media(max-width: 28.1rem) {
 
-    #container{
+    #container {
         flex-direction: column;
     }
 
-    #bio-container{
+    #bio-container {
         min-height: auto;
         border-right: none;
         border-bottom: 5px solid var(--bio-border-color);
     }
 
-    #bio-container h2{
+    #bio-container h2 {
         display: none;
     }
 
-    #bio-container p{
+    #bio-container p {
         max-width: 60%;
         margin: 10px auto;
     }
 
-    #about-container{
+    #about-container {
         text-align: center;
         padding: 1.8rem;
     }
 
-    #about-container .description{
+    #about-container .description {
         margin: 10px auto;
         max-width: 100%;
         line-height: 1.6rem;
     }
 
-    #btn-project{
+    #btn-project {
         margin: 20px auto;
     }
 
-    .skills-box{
+    .skills-box {
         flex: 1 1 100%;
         max-width: 100%;
         margin-bottom: 2.5rem;
