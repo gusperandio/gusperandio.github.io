@@ -33,65 +33,86 @@
   <body>
     <main id="container">
       <aside id="bio-container">
-        <h2>Gustavo F. Sperandio</h2>
-        <img id="img-profile" src="img/perfil.jpg" alt="Gustavo F. Sperandio" />
-        <p>
-          Olá, meu nome é Gustavo Sperandio e sou um desenvolvedor
-          <span class="bold">FullStack</span>
-        </p>
-        <br />
-        <p id="welcome-text" class="bold">Seja bem-vindo!</p>
-        <ul id="social-container">
-          <li>
-            <a href="https://www.instagram.com/gu_sperandio/" target="_blank">
-              <img id="socialMedia" src="img/instagram.png">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/gustavosperandio/" target="_blank">
-              <img id="socialMedia" src="img/linkedin.png">
+        <div class="animate__animated animate__zoomIn">
+
+          <img id="img-profile" src="img/perfil.jpg" alt="Gustavo F. Sperandio" />
+          <h2>Gustavo Sperandio</h2>
+          <!-- <p>
+            Olá, meu nome é Gustavo e sou desenvolvedor
+            <span class="bold">FullStack</span>
+          </p>
+          <br /> -->
+          <p id="welcome-text" class="bold">Seja bem-vindo!</p>
+          <ul id="social-container">
+            <li>
+              <a href="https://www.instagram.com/gu_sperandio/" target="_blank">
+                <img id="socialMedia" src="img/instagram.png" />
+              </a>
+            </li>
+            <li>
+              <a
+              href="https://www.linkedin.com/in/gustavosperandio/"
+              target="_blank"
+              >
+              <img id="socialMedia" src="img/linkedin.png" />
             </a>
           </li>
           <li>
             <a href="https://www.facebook.com/sperandio.gusta/" target="_blank">
-              <img id="socialMedia" src="img/facebook.png">
+              <img id="socialMedia" src="img/facebook.png" />
             </a>
           </li>
         </ul>
         <div id="email-container">
           <ion-icon name="mail-outline"></ion-icon
-          ><a href="mailto:gustavo.sperandio25@gmail.com"
+            ><a href="mailto:gustavo.sperandio25@gmail.com"
             >gustavo.sperandio25@gmail.com</a
-          >
+            >
+          </div>
         </div>
       </aside>
 
-      <section id="about-container">
-        <h1 id="name">Gustavo F. Sperandio</h1>
-        <p id="title"><span class="highlight">Desenvolvedor FullStack</span></p>
-        <p class="description">
-          Sou desenvolvedor FullStack, gosto de trabalhar com startups e grandes
+      <section id="about-container" style="padding-bottom: 0" >
+        <div class="animate__animated animate__zoomIn">
+
+          <h1 id="name">Gustavo Sperandio</h1>
+          <p id="title">
+            <span
+            class="highlight cor"
+            style="text-decoration: underline"
+            >Desenvolvedor FullStack</span
+            >
+          </p>
+          <p class="description">
+            Sou desenvolvedor FullStack, gosto de trabalhar com startups e grandes
           empresas.
         </p>
         <p class="description">
           Muito criativo, o que me deixa em forma para criar telas como arte no
-          Front-end e códigos com amplo fluxo de dados no Back-end.
+          <span class="cor">Front-end</span> e códigos com amplo
+          fluxo de dados no <span class="cor">Back-end</span>.
         </p>
-
-        <a href="#" id="btn-project"
-          ><ion-icon name="share-social-outline"></ion-icon
-          ><span>Projetos</span></a
-        >
-        <h2 id="skill-section-title">Minhas Skills</h2>
-        <p class="descption">Conheça as tecnologias que domino:</p>
-        <div id="skills-container">
-          <div class="skills-box">
-            <p class="skills-title">Front-end</p>
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-typescript-plain colored"></i>
+        <br />
+        <div style="display: flex; justify-content: space-evenly">
+          <!-- <a href="#" id="btn-tag1"
+            ><span>Skills</span></a
+            >
+            <a href="#" id="btn-tag2"
+            ><span>Projetos</span></a
+            > -->
+            <button>Skills</button>
+            <button>Projetos</button>
           </div>
+          <br />
+          <h2 id="skill-section-title">Minhas Skills</h2>
+          <div id="skills-container">
+            <div class="skills-box">
+              <p class="skills-title">Front-end</p>
+              <i class="devicon-html5-plain colored"></i>
+              <i class="devicon-css3-plain colored"></i>
+              <i class="devicon-javascript-plain colored"></i>
+              <i class="devicon-typescript-plain colored"></i>
+            </div>
           <div class="skills-box">
             <p class="skills-title">Back-end</p>
             <i class="devicon-nodejs-plain colored"></i>
@@ -109,15 +130,18 @@
             <i class="devicon-angularjs-plain colored"></i>
             <i class="devicon-jquery-plain-wordmark colored"></i>
             <i class="devicon-nextjs-original-wordmark"></i>
-            <i class="devicon-tailwindcss-plain colored"></i>
-            <i class="devicon-sass-original colored"></i>
-            <i class="devicon-bootstrap-plain colored"></i>
           </div>
           <div class="skills-box">
             <p class="skills-title">Back-end Frameworks</p>
             <i class="devicon-express-original-wordmark"></i>
-            <img src="img/restify.png">
+            <img src="img/restify.png" />
             <i class="devicon-dotnetcore-plain colored"></i>
+          </div>
+          <div class="skills-box">
+            <p class="skills-title">Styles Frameworks</p>
+            <i class="devicon-tailwindcss-plain colored"></i>
+            <i class="devicon-sass-original colored"></i>
+            <i class="devicon-bootstrap-plain colored"></i>
           </div>
           <div class="skills-box">
             <p class="skills-title">Mobile</p>
@@ -127,9 +151,9 @@
           <div class="skills-box">
             <p class="skills-title">UI/UX</p>
             <img
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
             />
-            <i class="devicon-xd-plain colored "></i>
+            <i class="devicon-xd-plain colored"></i>
           </div>
           <div class="skills-box">
             <p class="skills-title">Agile Methodologies</p>
@@ -140,15 +164,20 @@
             <p class="skills-title">Tools</p>
             <i class="devicon-vscode-plain colored"></i>
             <i class="devicon-visualstudio-plain colored"></i>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+            <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+            />
             <i class="devicon-git-plain colored"></i>
             <i class="devicon-github-original"></i>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" />
+            <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+            />
           </div>
         </div>
+      </div>
       </section>
     </main>
-
+    
     <!-- Icones Ionic -->
     <script
       type="module"
@@ -157,6 +186,21 @@
     <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
     ></script>
     <!-- ------------------- -->
   </body>

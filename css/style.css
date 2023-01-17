@@ -14,14 +14,15 @@
     --border-color: #999;
     --bio-bg-color: #1e2a3a;
     --bio-border-color: #293544;
-    --about-bg-color: #111821;
+    --about-bg-color: #151B21;
+    --aux: #1e90ff;
+}
+
+.cor{
+    color: var(--aux);
 }
 
 /*? General */
-
-.highlight {
-    color: var(--main-text-color)
-}
 
 /*? Containers */
 #container {
@@ -137,8 +138,8 @@
     font-weight: bold;
     font-size: 1rem;
     color: var(--main-text-color);
-    background-color: dodgerblue;
-    border: 2px solid dodgerblue;
+    background-color: var(--aux);
+    border: 2px solid var(--aux);
     border-radius: 5px;
     text-decoration: none;
     transition: .5s;
@@ -153,6 +154,65 @@
 #btn-project span {
     flex: 1 1 0;
 }
+
+#btn-tag1{
+    text-decoration: none;
+    font-weight: bold;
+    width: 25%;
+    font-size: 1rem;
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+#btn-tag2{
+    text-decoration: none;
+    font-weight: bold;
+    width: 25%;
+    font-size: 1rem;
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+#btn-tag1:hover{
+    border-bottom: 2px solid var(--main-text-color);
+
+}
+
+#btn-tag2:hover{
+    border-bottom: 2px solid var(--main-text-color);
+
+}
+
+
+button {
+    font-size: 1rem;
+    padding: 0.8em 2em;
+    background-color: #151B21;
+    border: 3px solid var(--aux);
+    border-radius: 1em;
+    color: #fff;
+    font-weight: bolder;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+    box-shadow: -5px 5px 0px 0px var(--aux);
+  }
+  
+  button:hover {
+    transform: translate(5px, -5px);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #btn-project ion-icon {
     font-size: 1.2rem;
@@ -187,7 +247,7 @@
     margin-bottom: 1.5rem;
     font-weight: bold;
     padding-left: 0.8rem;
-    border-left: 5px solid dodgerblue;
+    border-left: 5px solid var(--aux);
 }
 
 .skills-box i {
