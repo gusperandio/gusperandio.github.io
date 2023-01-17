@@ -34,8 +34,11 @@
     <main id="container">
       <aside id="bio-container">
         <div class="animate__animated animate__zoomIn">
-
-          <img id="img-profile" src="img/perfil.jpg" alt="Gustavo F. Sperandio" />
+          <img
+            id="img-profile"
+            src="img/perfil.jpg"
+            alt="Gustavo F. Sperandio"
+          />
           <h2>Gustavo Sperandio</h2>
           <!-- <p>
             Olá, meu nome é Gustavo e sou desenvolvedor
@@ -51,60 +54,86 @@
             </li>
             <li>
               <a
-              href="https://www.linkedin.com/in/gustavosperandio/"
-              target="_blank"
+                href="https://www.linkedin.com/in/gustavosperandio/"
+                target="_blank"
               >
-              <img id="socialMedia" src="img/linkedin.png" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/sperandio.gusta/" target="_blank">
-              <img id="socialMedia" src="img/facebook.png" />
-            </a>
-          </li>
-        </ul>
-        <div id="email-container">
-          <ion-icon name="mail-outline"></ion-icon
+                <img id="socialMedia" src="img/linkedin.png" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/sperandio.gusta/"
+                target="_blank"
+              >
+                <img id="socialMedia" src="img/facebook.png" />
+              </a>
+            </li>
+          </ul>
+          <div id="email-container">
+            <ion-icon name="mail-outline"></ion-icon
             ><a href="mailto:gustavo.sperandio25@gmail.com"
-            >gustavo.sperandio25@gmail.com</a
+              >gustavo.sperandio25@gmail.com</a
             >
           </div>
         </div>
+        <div
+          class="loaderBolinha"
+          style="display: flex; justify-content: center"
+        >
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <div class="planet"></div>
+        </div>
       </aside>
 
-      <section id="about-container" style="padding-bottom: 0" >
+      <section id="about-container" style="padding-bottom: 0">
         <div class="animate__animated animate__zoomIn">
-
+          <div class="cabecalho">
+            <div class="bandeiras">
+              <input
+                id="brasil"
+                type="image"
+                src="img/brasil.png"
+                style="margin-right: 1rem"
+              />
+              <input id="eua" type="image" src="img/usa.png" />
+            </div>
+          </div>
           <h1 id="name">Gustavo Sperandio</h1>
           <p id="title">
             <span
-            class="highlight cor"
-            style="text-decoration: underline"
-            >Desenvolvedor FullStack</span
+              class="highlight cor"
+              style="text-decoration: underline"
+              id="profissao"
+              >Desenvolvedor FullStack</span
             >
           </p>
-          <p class="description">
-            Sou desenvolvedor FullStack, gosto de trabalhar com startups e grandes
-          empresas.
-        </p>
-        <p class="description">
-          Muito criativo, o que me deixa em forma para criar telas como arte no
-          <span class="cor">Front-end</span> e códigos com amplo
-          fluxo de dados no <span class="cor">Back-end</span>.
-        </p>
-        <br />
-        <div style="display: flex; justify-content: space-evenly">
-          <!-- <a href="#" id="btn-tag1"
+          <p class="description" id="desc1">
+            Sou desenvolvedor FullStack, gosto de trabalhar com startups e
+            grandes empresas.
+          </p>
+          <p class="description" id="desc2">
+            Muito criativo, o que me deixa em forma para criar telas como arte
+            no
+            <span class="cor">Front-end</span> e códigos com amplo fluxo de
+            dados no <span class="cor">Back-end</span>.
+          </p>
+          <br />
+          <div style="display: flex; justify-content: space-evenly">
+            <!-- <a href="#" id="btn-tag1"
             ><span>Skills</span></a
             >
             <a href="#" id="btn-tag2"
             ><span>Projetos</span></a
             > -->
-            <button>Skills</button>
-            <button>Projetos</button>
+            <button id="btn1">Habilidades</button>
+            <button id="btn2">Projetos</button>
           </div>
           <br />
-          <h2 id="skill-section-title">Minhas Skills</h2>
+          <h2 id="skill-section-title">Minhas habilidades</h2>
           <div id="skills-container">
             <div class="skills-box">
               <p class="skills-title">Front-end</p>
@@ -113,71 +142,71 @@
               <i class="devicon-javascript-plain colored"></i>
               <i class="devicon-typescript-plain colored"></i>
             </div>
-          <div class="skills-box">
-            <p class="skills-title">Back-end</p>
-            <i class="devicon-nodejs-plain colored"></i>
-            <i class="devicon-csharp-plain colored"></i>
-          </div>
-          <div class="skills-box">
-            <p class="skills-title">Databases</p>
-            <i class="devicon-microsoftsqlserver-plain-wordmark"></i>
-            <i class="devicon-mysql-plain-wordmark colored"></i>
-            <i class="devicon-mongodb-plain-wordmark colored"></i>
-          </div>
-          <div class="skills-box">
-            <p class="skills-title">Front-end Frameworks</p>
-            <i class="devicon-react-original colored"></i>
-            <i class="devicon-angularjs-plain colored"></i>
-            <i class="devicon-jquery-plain-wordmark colored"></i>
-            <i class="devicon-nextjs-original-wordmark"></i>
-          </div>
-          <div class="skills-box">
-            <p class="skills-title">Back-end Frameworks</p>
-            <i class="devicon-express-original-wordmark"></i>
-            <img src="img/restify.png" />
-            <i class="devicon-dotnetcore-plain colored"></i>
-          </div>
-          <div class="skills-box">
-            <p class="skills-title">Styles Frameworks</p>
-            <i class="devicon-tailwindcss-plain colored"></i>
-            <i class="devicon-sass-original colored"></i>
-            <i class="devicon-bootstrap-plain colored"></i>
-          </div>
-          <div class="skills-box">
-            <p class="skills-title">Mobile</p>
-            <i class="devicon-xamarin-original colored"></i>
-            <i class="devicon-ionic-original"></i>
-          </div>
-          <div class="skills-box">
-            <p class="skills-title">UI/UX</p>
-            <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-            />
-            <i class="devicon-xd-plain colored"></i>
-          </div>
-          <div class="skills-box">
-            <p class="skills-title">Agile Methodologies</p>
-            <i class="devicon-trello-plain colored"></i>
-            <i class="devicon-jira-plain colored"></i>
-          </div>
-          <div class="skills-box">
-            <p class="skills-title">Tools</p>
-            <i class="devicon-vscode-plain colored"></i>
-            <i class="devicon-visualstudio-plain colored"></i>
-            <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
-            />
-            <i class="devicon-git-plain colored"></i>
-            <i class="devicon-github-original"></i>
-            <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
-            />
+            <div class="skills-box">
+              <p class="skills-title">Back-end</p>
+              <i class="devicon-nodejs-plain colored"></i>
+              <i class="devicon-csharp-plain colored"></i>
+            </div>
+            <div class="skills-box">
+              <p class="skills-title">Databases</p>
+              <i class="devicon-microsoftsqlserver-plain-wordmark"></i>
+              <i class="devicon-mysql-plain-wordmark colored"></i>
+              <i class="devicon-mongodb-plain-wordmark colored"></i>
+            </div>
+            <div class="skills-box">
+              <p class="skills-title">Front-end Frameworks</p>
+              <i class="devicon-react-original colored"></i>
+              <i class="devicon-angularjs-plain colored"></i>
+              <i class="devicon-jquery-plain-wordmark colored"></i>
+              <i class="devicon-nextjs-original-wordmark"></i>
+            </div>
+            <div class="skills-box">
+              <p class="skills-title">Back-end Frameworks</p>
+              <i class="devicon-express-original-wordmark"></i>
+              <img src="img/restify.png" />
+              <i class="devicon-dotnetcore-plain colored"></i>
+            </div>
+            <div class="skills-box">
+              <p class="skills-title">Styles Frameworks</p>
+              <i class="devicon-tailwindcss-plain colored"></i>
+              <i class="devicon-sass-original colored"></i>
+              <i class="devicon-bootstrap-plain colored"></i>
+            </div>
+            <div class="skills-box">
+              <p class="skills-title" id="moveis">Mobile</p>
+              <i class="devicon-xamarin-original colored"></i>
+              <i class="devicon-ionic-original"></i>
+            </div>
+            <div class="skills-box">
+              <p class="skills-title">UI/UX</p>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+              />
+              <i class="devicon-xd-plain colored"></i>
+            </div>
+            <div class="skills-box">
+              <p class="skills-title" id="metodologia">Metodologias ágeis</p>
+              <i class="devicon-trello-plain colored"></i>
+              <i class="devicon-jira-plain colored"></i>
+            </div>
+            <div class="skills-box">
+              <p class="skills-title" id="ferramentas">Ferramentas</p>
+              <i class="devicon-vscode-plain colored"></i>
+              <i class="devicon-visualstudio-plain colored"></i>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+              />
+              <i class="devicon-git-plain colored"></i>
+              <i class="devicon-github-original"></i>
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+              />
+            </div>
           </div>
         </div>
-      </div>
       </section>
     </main>
-    
+
     <!-- Icones Ionic -->
     <script
       type="module"
@@ -192,16 +221,66 @@
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
+    <script>
+      document.getElementById("brasil").addEventListener(
+        "click",
+        function (event) {
+          var welcome = document.getElementById("welcome-text");
+          var profissao = document.getElementById("profissao");
+          var metodologia = document.getElementById("metodologia");
+          var desc1 = document.getElementById("desc1");
+          var desc2 = document.getElementById("desc2");
+          var btn1 = document.getElementById("btn1");
+          var btn2 = document.getElementById("btn2");
+          var titleSkill = document.getElementById("skill-section-title");
+          var ferramentas = document.getElementById("ferramentas");
+          var mobile = document.getElementById("moveis");
+
+          welcome.innerHTML = "Seja bem-vindo!";
+          profissao.innerHTML = "Desenvolvedor FullStack";
+          metodologia.innerHTML = "Metodologias ágeis";
+          desc1.innerHTML =
+            "Sou desenvolvedor FullStack, gosto de trabalhar com startups e grandes empresas.";
+          desc2.innerHTML = ` Muito criativo, o que me deixa em forma para criar telas como arte no <span class="cor">Front-end</span> e códigos com amplo fluxo de dados no <span class="cor">Back-end</span>.`;
+          btn1.innerHTML = "Habilidades";
+          btn2.innerHTML = "Projetos";
+          titleSkill.innerHTML = "Minhas habilidades";
+          ferramentas.innerHTML = "Ferramentas";
+          mobile.innerHTML = "Disp. Móveis";
+        },
+        false
+      );
+    </script>
+    <script>
+      document.getElementById("eua").addEventListener(
+        "click",
+        function (event) {
+          var welcome = document.getElementById("welcome-text");
+          var profissao = document.getElementById("profissao");
+          var metodologia = document.getElementById("metodologia");
+          var desc1 = document.getElementById("desc1");
+          var desc2 = document.getElementById("desc2");
+          var btn1 = document.getElementById("btn1");
+          var btn2 = document.getElementById("btn2");
+          var titleSkill = document.getElementById("skill-section-title");
+          var ferramentas = document.getElementById("ferramentas");
+          var mobile = document.getElementById("moveis");
+
+          welcome.innerHTML = "Hello, welcome!";
+          profissao.innerHTML = "Fullstack Developer";
+          metodologia.innerHTML = "Agile Methodologies";
+          desc1.innerHTML =
+            "I'm a FullStack developer, I like to work with startups and big companies.";
+          desc2.innerHTML = ` Very creative, which leaves me in shape to create canvas as art in the <span class="cor">Front-end</span> and data-intensive code in the <span class="cor">Back-end</span>.`;
+          btn1.innerHTML = "Skill";
+          btn2.innerHTML = "Projects";
+          titleSkill.innerHTML = "My skills";
+          ferramentas.innerHTML = "Tools";
+          mobile.innerHTML = "Mobile";
+        },
+        false
+      );
+    </script>
     <!-- ------------------- -->
   </body>
 </html>
