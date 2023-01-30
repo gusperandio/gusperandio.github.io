@@ -269,6 +269,10 @@ button:hover {
     height: 2.5rem;
 }
 
+.under{
+    text-decoration: underline;
+}
+
 
 /* Animação */
 .planet {
