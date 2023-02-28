@@ -86,10 +86,10 @@
           <br />
           <br />
           <br />
-          <div class="planet"></div>
+          <!-- <div class="planet"></div> -->
         </div>
       </aside>
-     
+
       <section id="about-container" style="padding-bottom: 0">
         <div class="animate__animated animate__zoomIn">
           <div class="cabecalho">
@@ -101,7 +101,12 @@
                 src="img/brasil.png"
                 style="margin-right: 1rem"
               />
-              <input id="eua" onclick="bandeira('eua');" type="image" src="img/usa.png" />
+              <input
+                id="eua"
+                onclick="bandeira('eua');"
+                type="image"
+                src="img/usa.png"
+              />
             </div>
           </div>
           <h1 id="name">Gustavo Sperandio</h1>
@@ -133,17 +138,25 @@
             front-end for me becomes a canvas to paint where not even the sky is
             the limit. Even knowing that one more or less brushstroke can spoil
             the painting, I still know my limits to make something magnificent.
+            
           </p>
           <br />
-          <div style="display: flex; justify-content: space-evenly">
+          <div
+            style="
+              display: flex;
+              justify-content: space-evenly;
+              flex-wrap: wrap;
+            "
+          >
             <!-- <a href="#" id="btn-tag1"
             ><span>Skills</span></a
             >
             <a href="#" id="btn-tag2"
             ><span>Projetos</span></a
             > -->
-            <button id="btn1">Skills</button>
-            <button id="btn2">Projects</button>
+            <button id="btn1" onclick="projects('S')">Skills</button>
+            <button id="btn2" onclick="projects('P')">Projects</button>
+            <button id="btn3" onclick="projects('C')">Certifications</button>
           </div>
           <br />
           <h2 id="skill-section-title">My skills</h2>
@@ -208,10 +221,95 @@
               />
               <i class="devicon-git-plain colored"></i>
               <i class="devicon-github-original"></i>
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
-              />
             </div>
+          </div>
+          <div id="projects">
+            <div class="cards">
+              <div class="card one">
+                <div class="cardDetails">
+                  <div class="cardDetailsHaeder">Little Teti</div>
+                  <br />
+                  <a
+                    href="https://github.com/gustavofusco/Litte-Teti"
+                    target="_blank"
+                    ><div class="cardDetailsButton">
+                      Projeto&nbsp;
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                        />
+                      </svg></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card two">
+                <div class="cardDetails">
+                  <div class="cardDetailsHaeder">ACME INC.</div>
+                  <br />
+                  <a
+                    href="https://github.com/gustavofusco/acme-inc"
+                    target="_blank"
+                    ><div class="cardDetailsButton">
+                      Projeto&nbsp;
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                        />
+                      </svg></div
+                  ></a>
+                </div>
+              </div>
+              <div class="card three">
+                <div class="cardDetails">
+                  <div class="cardDetailsHaeder">Emprega + Birigui</div>
+                  <br />
+                  <a
+                    href="https://github.com/RodrigoWebDev-BR/App_Emprega_Birigui_SENAC_2022"
+                    target="_blank"
+                    ><div class="cardDetailsButton">
+                      Projeto&nbsp;
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                        />
+                      </svg></div
+                  ></a>
+                  <span style="margin-top: 0.5rem"></span>
+                  <a
+                    href="https://github.com/gustavofusco/api-emprega"
+                    target="_blank"
+                    ><div class="cardDetailsButton">
+                      API &nbsp;<svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                        />
+                      </svg></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="certifications">
           </div>
         </div>
       </section>
@@ -231,7 +329,7 @@
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
-   
+
     <!-- ------------------- -->
   </body>
 </html>
