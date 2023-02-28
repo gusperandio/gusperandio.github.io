@@ -144,7 +144,7 @@ function credentials() {
       data: "Fevereiro 17, 2023",
     },
     {
-      name: "Desenvolvedor NodeJS",
+      name: "Dev NodeJS",
       link: "https://www.udemy.com/certificate/UC-3b74b1bf-5b06-408c-a455-802367d8f247/",
       desc: "Desenvolvimento com NodeJS e banco de dados MongoDB.",
       data: "Setembro 23, 2020",
@@ -160,47 +160,39 @@ function credentials() {
   let text = "";
   for (let i = 0; i < cursos.length; i++) {
     text +=
-      `<div class="cardCertify">
-  <div style="display: flex; justify-content: flex-end">
-    <img src="./img/certificado.png" class="imgCertify" />
-  </div>
-  <br />
-  <a
-    href="` +
+      `<a href="` +
       cursos[i].link +
-      `"
-    target="_blank"
-    ><h3 class="cardCertify__title">` +
+      `" target="_blank">
+      <div class="cardCertify">
+      <div style="display: flex; justify-content: flex-end">
+        <img src="img/certificado.png" class="imgCertify" />
+      </div>
+      <br />
+      <h3 class="cardCertify__title">` +
       cursos[i].name +
-      `</h3></a
-  >
-  <p class="cardCertify__content">` +
+      `</h3>
+      <p class="cardCertify__content">` +
       cursos[i].desc +
       `
-  </p>
-  <div class="cardCertify__date">` +
+      </p>
+      <div class="cardCertify__date">` +
       cursos[i].data +
       `</div>
-  <a
-    href="` +
-      cursos[i].link +
-      `"
-    target="_blank"
-    ><div class="cardCertify__arrow">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        height="15"
-        width="15"
+      <div class="cardCertify__arrow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            height="15"
+            width="15"
+          >
+            <path
+              fill="#fff"
+              d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
+            ></path>
+          </svg></div
       >
-        <path
-          fill="#fff"
-          d="M13.4697 17.9697C13.1768 18.2626 13.1768 18.7374 13.4697 19.0303C13.7626 19.3232 14.2374 19.3232 14.5303 19.0303L20.3232 13.2374C21.0066 12.554 21.0066 11.446 20.3232 10.7626L14.5303 4.96967C14.2374 4.67678 13.7626 4.67678 13.4697 4.96967C13.1768 5.26256 13.1768 5.73744 13.4697 6.03033L18.6893 11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H18.6893L13.4697 17.9697Z"
-        ></path>
-      </svg></div
-  ></a>
-</div>`;
+</div></a>`;
   }
 
   document.getElementById("certifications").innerHTML = text;
@@ -212,21 +204,21 @@ function projects() {
       name: "Emprega+",
       link: "https://github.com/RodrigoWebDev-BR/App_Emprega_Birigui_SENAC_2022",
       license: "MIT License",
-      image: "./img/empregaB.png",
+      image: "img/empregaB.png",
       desc: "",
     },
     {
       name: "ACME INC.",
       link: "https://github.com/gustavofusco/acme-inc",
       license: "MIT License",
-      image: "./img/acme-inc.png",
+      image: "img/acme-inc.png",
       desc: "",
     },
     {
       name: "Little Teti",
       link: "https://github.com/gustavofusco/Litte-Teti",
       license: "MIT License",
-      image: "./img/little.png",
+      image: "img/little.png",
       desc: "",
     },
   ];
@@ -295,14 +287,12 @@ function projects() {
         </a>
       </div>
       <div class="bottom-part">
-        <a href="tel: 0123456789" class="link">
           <span class="icon">
-            <img style="width: 24px; height: 24px;" src="./img/justice.svg"/>
+            <img style="width: 24px; height: 24px;" src="img/justice.svg"/>
           </span>
           ` +
-      projetos[i].license +
+       projetos[i].license +
       `
-        </a>
       </div>
     </div>
   </div>`;
