@@ -356,6 +356,7 @@ button:hover {
     display: none;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap; 
     height: 35vh;
 }
 
@@ -446,77 +447,124 @@ button:hover {
     }
 }
 
-.cards {
-    position: relative;
+.card {
+    width: 340px;
+    height: 150px;
+    background: whitesmoke;
+    transition: .2s linear;
+    box-shadow: 1px 1px 10px lightslategray;
+    cursor: default;
+    border-radius: 1rem;
+    margin: 12px;
   }
   
-  .card {
-    z-index: 1;
-    position: absolute;
-    width: 254px;
-    height: 190px;
-    border-radius: 10px;
-    transition: all .5s ease-out;
-    overflow: hidden;
-    transform: translateX(0px) translateY(0px) perspective(905px) rotateX(0deg) rotateY(0deg) rotateZ(-8deg);
+  .card-top-part {
+    width: 100%;
+    height: 70%;
+    padding: 15px;
+    display: flex;
   }
   
-  .card.one {
-    top: -120px;
-    left: -150px;
-    background: linear-gradient(180deg, #FF0055 0%, #000066 100%);
-  }
-  
-  .card.two {
-    top: -95px;
-    left: -125px;
-    background: linear-gradient(180deg, #fa00ff 0%, #01f998 99%);
-  }
-  
-  .card.three {
-    top: -70px;
-    left: -100px;
-    background: linear-gradient(180deg, #c0f901 0%, #fa00ff 100%);
-  }
-  
-  .card:hover {
-    z-index: 4;
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) !important;
-    transition: all .5s ease-out;
-  }
-  
-  .cardDetails {
-    width: 55%;
-    height: 100%;
-    padding: 20px;
+  .left-part {
+    width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background: rgba(0,0,0,0.8);
-    transition: .5s;
-    transform-origin: left;
-    transform: perspective(2000px) rotateY(-90deg);
+    justify-content: space-around;
   }
   
-  .card:hover .cardDetails {
-    transform: perspective(2000px) rotateY(0deg);
-  }
-  
-  .cardDetailsHaeder {
-    font-weight: 600;
-    color: #edb899;
-  }
-  
-  .cardDetailsButton {
-    padding: 6px 6px;
-    border-radius: 10px;
-    background-color: #edb899;
-    color: #000;
-    font-weight: 600;
+  .right-part {
+    width: 30%;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+  }
+  
+  .user-name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  
+  .name {
+    font-size: 24px;
+    color: #222;
+  }
+  
+  .role {
+    font-size: 10px;
+    color: lightcyan;
+    font-weight: bold;
+    text-transform: lowercase;
+    background-color: #26cd4d;
+    padding: 4px 10px;
+    border-radius: 15px;
+  }
+  
+  .position {
+    color: grey;
+    align-items: start;
+  }
+  
+  .card-bottom-part {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    border: 1px solid rgb(231, 227, 227);
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+  }
+  
+  .user-photo {
+    width: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .bottom-part {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bottom-part:hover > .link {
+    transform: scale(1.1);
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    gap: 5.5px;
+    font-weight: bold;
+    transition: .2s linear;
+  }
+  
+  .icon {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bottom-part:first-child {
+    border-right: 1px solid rgb(231, 227, 227);
+  }
+
+  .bottom-part a {
+    text-decoration: none;
+    color: #222;
   }
 
   a{
@@ -618,3 +666,4 @@ button:hover {
   .cardCertify:hover .cardCertify__arrow svg {
     transform: translateX(3px);
   }
+

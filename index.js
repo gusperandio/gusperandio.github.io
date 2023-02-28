@@ -23,7 +23,7 @@ function bandeira(e) {
       "Adoro trabalhar com a minha criatividade quando estou programando, o front-end para mim se torna uma tela para pintar onde nem o céu é o limite. Mesmo sabendo que uma pincelada a mais ou a menos pode estragar o quadro, ainda sei os meus limites para tornar algo magnífico.";
     btn1.innerHTML = "Habilidades";
     btn2.innerHTML = "Projetos";
-    btn3.innerHTML = "Certificações"
+    btn3.innerHTML = "Certificações";
     titleSkill.innerHTML = "Habilidades";
     ferramentas.innerHTML = "Ferramentas";
     localStorage.setItem("brasil", "ok");
@@ -49,7 +49,7 @@ function bandeira(e) {
       "I love working with my creativity when I'm programming, the front-end for me becomes a canvas to paint where not even the sky is the limit. Even knowing that one more or less brushstroke can spoil the painting, I still know my limits to make something magnificent.";
     btn1.innerHTML = "Skills";
     btn2.innerHTML = "Projects";
-    btn3.innerHTML = "Certifications"
+    btn3.innerHTML = "Certifications";
     titleSkill.innerHTML = "Skills";
     ferramentas.innerHTML = "Tools";
     localStorage.setItem("eua", "ok");
@@ -57,7 +57,7 @@ function bandeira(e) {
   }
 }
 
-function projects(e) {
+function sections(e) {
   let project = document.getElementById("projects");
   let skills = document.getElementById("skills-container");
   let certify = document.getElementById("certifications");
@@ -80,6 +80,7 @@ function projects(e) {
 
       break;
     case "P":
+      projects();
       certify.style.display = "none";
       project.style.display = "flex";
       skills.style.display = "none";
@@ -203,4 +204,109 @@ function credentials() {
   }
 
   document.getElementById("certifications").innerHTML = text;
+}
+
+function projects() {
+  const projetos = [
+    {
+      name: "Emprega+",
+      link: "https://github.com/RodrigoWebDev-BR/App_Emprega_Birigui_SENAC_2022",
+      license: "MIT License",
+      image: "./img/empregaB.png",
+      desc: "",
+    },
+    {
+      name: "ACME INC.",
+      link: "https://github.com/gustavofusco/acme-inc",
+      license: "MIT License",
+      image: "./img/acme-inc.png",
+      desc: "",
+    },
+    {
+      name: "Little Teti",
+      link: "https://github.com/gustavofusco/Litte-Teti",
+      license: "MIT License",
+      image: "./img/little.png",
+      desc: "",
+    },
+  ];
+  let labelP = "";
+  if (localStorage.getItem("eua") === "ok" || !localStorage.getItem("brasil")) {
+    projetos[0].desc = "Curriculum management project";
+    projetos[1].desc = "Project of a store as training with react";
+    projetos[2].desc = "Children's clothing store";
+    labelP = "Project";
+  } else {
+    projetos[0].desc = "Projeto de gestão curricular";
+    projetos[1].desc = "Projeto de uma loja virtual com ReactJS";
+    projetos[2].desc = "Loja de roupas infantis";
+    labelP = "Projeto";
+  }
+
+  let text = "";
+  for (let i = 0; i < projetos.length; i++) {
+    text +=
+      `<div class="card">
+    <div class="card-top-part">
+      <div class="left-part">
+        <div class="user-name">
+          <p class="name">` +
+      projetos[i].name +
+      `</p>
+          <p class="role">Public</p>
+        </div>
+        <div class="user-position">
+          <p class="position">` +
+      projetos[i].desc +
+      `</p>
+        </div>
+      </div>
+      <div class="right-part">
+        <div class="user-photo">
+          <img
+            src="` +
+      projetos[i].image +
+      `"
+            class="photo"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="card-bottom-part">
+      <div class="bottom-part">
+        <a href="` +
+      projetos[i].link +
+      `" class="link" target="_blank">
+          <span class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+          </span>
+          ` +
+      labelP +
+      `
+        </a>
+      </div>
+      <div class="bottom-part">
+        <a href="tel: 0123456789" class="link">
+          <span class="icon">
+            <img style="width: 24px; height: 24px;" src="./img/justice.svg"/>
+          </span>
+          ` +
+      projetos[i].license +
+      `
+        </a>
+      </div>
+    </div>
+  </div>`;
+  }
+
+  document.getElementById("projects").innerHTML = text;
 }
