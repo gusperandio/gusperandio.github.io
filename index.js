@@ -253,16 +253,7 @@ function projects() {
       `</p>
         </div>
       </div>
-      <div class="right-part">
-        <div class="user-photo">
-          <img
-            src="` +
-      projetos[i].image +
-      `"
-            class="photo"
-          />
-        </div>
-      </div>
+      
     </div>
     <div class="card-bottom-part">
       <div class="bottom-part">
@@ -290,7 +281,7 @@ function projects() {
           <span class="icon">
             <img style="width: 24px; height: 24px;" src="img/justice.svg"/>
           </span>
-          ` +
+          &nbsp;` +
        projetos[i].license +
       `
       </div>
