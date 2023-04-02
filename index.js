@@ -105,47 +105,74 @@ function sections(e) {
 }
 
 function credentials() {
+  let [i1, i2] = [
+    localStorage.getItem("eua") === "ok",
+    !localStorage.getItem("brasil"),
+  ];
+
+  console.log(i1, i2)
   const cursos = [
     {
       name: "React + Redux",
       link: "https://www.udemy.com/certificate/UC-00e0db79-f472-46bd-ba7d-112456a16ca6/",
-      desc: "Desenvolvendo front-end com framework JS e gerenciamento de estado.",
+      desc:
+        i1 || i2
+          ? "Developing front-end with JS framework and state management."
+          : "Desenvolvendo front-end com framework JS e gerenciamento de estado.",
       data: "Dezembro 28, 2022",
     },
     {
       name: "Api RestFUL",
       link: "https://www.udemy.com/certificate/UC-fe6aba63-08de-4764-98f9-e9dbc375dba3/",
-      desc: "Desenvolvimento de APIs com tecnologias NodeJS, Restify e Mongoose.",
+      desc:
+        i1 || i2
+          ? "Development of APIs with NodeJS, Restify and Mongoose technologies."
+          : "Desenvolvimento de APIs com tecnologias NodeJS, Restify e Mongoose.",
       data: "Agosto 13, 2022",
     },
     {
       name: "Git/Github",
       link: "https://www.udemy.com/certificate/UC-fcf98d7d-bc5a-440f-acea-255157e57ca7/",
-      desc: "Versionamento de projetos utilizando Git e Github + Github pages.",
+      desc:
+        i1 || i2
+          ? "Project versioning using Git and Github + Github pages."
+          : "Versionamento de projetos utilizando Git e Github + Github pages.",
       data: "Janeiro 16, 2023",
     },
     {
       name: "IONIC 6",
       link: "https://www.udemy.com/certificate/UC-e7be056c-42c6-48b1-ae9e-6009836ae775/",
-      desc: "Desenvolvimento mobile com Angular + versão framework IONIC.",
+      desc:
+        i1 || i2
+          ? "Mobile development with Angular + IONIC framework version."
+          : "Desenvolvimento mobile com Angular + versão framework IONIC.",
       data: "Julho 12, 2022",
     },
     {
       name: "SCRUM na prática",
       link: "https://www.udemy.com/certificate/UC-2e22b451-af2c-44fe-940e-f3db8888b397/",
-      desc: "Aplicando metodologia ágil Scrum em hambientes reais e rotineiros.",
+      desc:
+        i1 || i2
+          ? "Applying agile Scrum methodology in real and routine environments."
+          : "Aplicando metodologia ágil Scrum em hambientes reais e rotineiros.",
       data: "Fevereiro 17, 2023",
     },
     {
       name: "Dev NodeJS",
       link: "https://www.udemy.com/certificate/UC-3b74b1bf-5b06-408c-a455-802367d8f247/",
-      desc: "Desenvolvimento com NodeJS e banco de dados MongoDB.",
+      desc:
+        i1 || i2
+          ? "Development with NodeJS and MongoDB database."
+          : "Desenvolvimento com NodeJS e banco de dados MongoDB.",
       data: "Setembro 23, 2020",
     },
     {
       name: "AWS Practitioner",
       link: "",
-      desc: "DEVOPS - Práticas iniciais com estrutura AWS",
+      desc:
+        i1 || i2
+          ? "DEVOPS - Initial practices with AWS framework"
+          : "DEVOPS - Práticas iniciais com estrutura AWS",
       data: "Janeiro 6, 2023",
     },
   ];
