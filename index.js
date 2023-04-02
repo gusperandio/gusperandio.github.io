@@ -17,7 +17,10 @@ function bandeira(e) {
     welcome.innerHTML = "Seja bem-vindo!";
     profissao.innerHTML = "Desenvolvedor FullStack";
     metodologia.innerHTML = "Metodologias ágeis";
-    desc1.innerHTML = `Meu nome é Gustavo Sperandio, sou programador há quase dois anos, tenho um amplo conhecimento com <span class="cor">React</span>. Utilizo as tecnologias com <span class="cor">Redux</span> e <span class="cor">React Hooks</span>. <br /> Desenvolvo também back-end, utilizando <span class="cor">NodeJS</span> criando API's RestFUL com middleware <span class="cor">Restify</span> e banco de dados <span class="cor">MongoDB</span>. Tenho conhecimentos básico em metodologias Ágeis, principalmente SCRUM, e mais algumas outras qualificações como <span class="under">FIGMA e AdobeXD</span>`;
+    desc1.innerHTML = `Sou desenvolvedor e docente em cursos técnicos ensinando programação, tenho habilidades com ambas tecnologias voltadas para front-end e back-end, ofereço meu tempo para desenvolver e alavancar os projetos e resultados da empresa, aplicando metodologias ágeis e código limpo na conversação entre máquina e ser humano. Autodidata em momentos que desconheço uma situação e resiliente em situações difíceis.
+
+    Meu objetivo é me tornar um programador cada vez melhor, sabendo que posso oferecer para ótimos desempenhos de forma constante, evoluindo tanto no pessoal como profissional.
+    `;
 
     desc2.innerHTML =
       "Adoro trabalhar com a minha criatividade quando estou programando, o front-end para mim se torna uma tela para pintar onde nem o céu é o limite. Mesmo sabendo que uma pincelada a mais ou a menos pode estragar o quadro, ainda sei os meus limites para tornar algo magnífico.";
@@ -32,19 +35,9 @@ function bandeira(e) {
     welcome.innerHTML = "Hello, welcome!";
     profissao.innerHTML = "Fullstack Developer";
     metodologia.innerHTML = "Agile Methodologies";
-    desc1.innerHTML = `My name is Gustavo Sperandio, I've been a programmer for almost two
-       years, I have extensive knowledge with
-       <span class="cor">React</span>. Using technologies with
-       <span class="cor">Redux</span> and
-       <span class="cor">React Hooks</span>.
-       <br />
-       I also develop back-end using
-       <span class="cor">NodeJS</span> creating RestFUL API's with
-       <span class="cor">Restify</span> middleware and
-       <span class="cor">MongoDB</span> database. I have basic knowledge in
-       Agile methodologies, mainly SCRUM, and some other qualifications
-       like
-       <span class="under">FIGMA and AdobeXD</span>`;
+    desc1.innerHTML = `I am a developer and teacher in technical courses teaching programming, I have skills with both front-end and back-end technologies, I offer my time to develop and leverage the company's projects and results, applying agile methodologies and clean code in the conversation between machine and human being. Self-taught in times when I don't know a situation and resilient in difficult situations.
+
+    My goal is to become an even better programmer, knowing that I can constantly offer great performances, evolving both personally and professionally.`;
     desc2.innerHTML =
       "I love working with my creativity when I'm programming, the front-end for me becomes a canvas to paint where not even the sky is the limit. Even knowing that one more or less brushstroke can spoil the painting, I still know my limits to make something magnificent.";
     btn1.innerHTML = "Skills";
@@ -282,7 +275,7 @@ function projects() {
             <img style="width: 24px; height: 24px;" src="img/justice.svg"/>
           </span>
           &nbsp;` +
-       projetos[i].license +
+      projetos[i].license +
       `
       </div>
     </div>
