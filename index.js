@@ -157,13 +157,14 @@ function credentials() {
           : "Aplicando metodologia ágil Scrum em hambientes reais e rotineiros.",
       data: "Fevereiro 17, 2023",
     },
+    
     {
       name: "Dev NodeJS",
-      link: "https://www.udemy.com/certificate/UC-3b74b1bf-5b06-408c-a455-802367d8f247/",
+      link: "https://www.udemy.com/certificate/UC-c11eda16-cca6-4f1a-977f-bd1dec41f1ea/",
       desc:
         i1 || i2
-          ? "Development with NodeJS and MongoDB database."
-          : "Desenvolvimento com NodeJS e banco de dados MongoDB.",
+          ? "Development APIs with NodeJS and MongoDB database or PostgreSQL."
+          : "Desenvolvimento de APIs com NodeJS e banco de dados MongoDB ou PostgreSQL",
       data: "Setembro 23, 2020",
     },
     {
