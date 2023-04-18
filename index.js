@@ -169,7 +169,7 @@ function credentials() {
     },
     {
       name: "AWS Practitioner",
-      link: "",
+      link: "https://www.linkedin.com/posts/gustavosperandio_aws-cloud-activity-7017179475020779520-jppM?utm_source=share&utm_medium=member_desktop",
       desc:
         i1 || i2
           ? "DEVOPS - Initial practices with AWS framework"
