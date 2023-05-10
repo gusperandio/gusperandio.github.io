@@ -30,12 +30,15 @@
     />
     <!-- ------------------- -->
     <script type="text/javascript" src="index.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"
+    ></script>
   </head>
   <body>
     <script>
-      $(document).ready(function(){
-        localStorage.clear()
+      $(document).ready(function () {
+        localStorage.clear();
       });
     </script>
     <main id="container">
@@ -120,9 +123,15 @@
             >
           </p>
           <p class="description" id="desc1">
-            I am a developer and teacher in technical courses teaching programming, have skills with both front-end and back-end technologies, offer my time to develop and leverage the company's projects and results, applying agile methodologies and clean code in the conversation between machine and human being. Self-taught in times when i don't know a situation and resilient in difficult situations.
-
-            My goal is to become an even better programmer, knowing that I can constantly offer great performances, evolving both personally and professionally.
+            I am a developer and teacher in technical courses teaching
+            programming, have skills with both front-end and back-end
+            technologies, offer my time to develop and leverage the company's
+            projects and results, applying agile methodologies and clean code in
+            the conversation between machine and human being. Self-taught in
+            times when i don't know a situation and resilient in difficult
+            situations. My goal is to become an even better programmer, knowing
+            that I can constantly offer great performances, evolving both
+            personally and professionally.
           </p>
           <p class="description" id="desc2">
             I love working with my creativity when I'm programming, the
@@ -138,12 +147,6 @@
               flex-wrap: wrap;
             "
           >
-            <!-- <a href="#" id="btn-tag1"
-            ><span>Skills</span></a
-            >
-            <a href="#" id="btn-tag2"
-            ><span>Projetos</span></a
-            > -->
             <button id="btn1" onclick="sections('S')">Skills</button>
             <button id="btn2" onclick="sections('P')">Projects</button>
             <button id="btn3" onclick="sections('C')">Certifications</button>
@@ -213,11 +216,8 @@
               <i class="devicon-github-original"></i>
             </div>
           </div>
-          <div id="projects">
-          </div>
-          <div id="certifications">
-            
-          </div>
+          <div id="projects"></div>
+          <div id="certifications"></div>
         </div>
       </section>
     </main>
