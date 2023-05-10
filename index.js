@@ -110,7 +110,7 @@ function credentials() {
     !localStorage.getItem("brasil"),
   ];
 
-  console.log(i1, i2)
+  console.log(i1, i2);
   const cursos = [
     {
       name: "React + Redux",
@@ -157,7 +157,7 @@ function credentials() {
           : "Aplicando metodologia ágil Scrum em hambientes reais e rotineiros.",
       data: "Fevereiro 17, 2023",
     },
-    
+
     {
       name: "Dev NodeJS",
       link: "https://www.udemy.com/certificate/UC-c11eda16-cca6-4f1a-977f-bd1dec41f1ea/",
@@ -165,7 +165,7 @@ function credentials() {
         i1 || i2
           ? "Development APIs with NodeJS and MongoDB database or PostgreSQL."
           : "Desenvolvimento de APIs com NodeJS e banco de dados MongoDB ou PostgreSQL",
-      data: "Setembro 23, 2020",
+      data: "Abril 10, 2023",
     },
     {
       name: "AWS Practitioner",
@@ -175,6 +175,15 @@ function credentials() {
           ? "DEVOPS - Initial practices with AWS framework"
           : "DEVOPS - Práticas iniciais com estrutura AWS",
       data: "Janeiro 6, 2023",
+    },
+    {
+      name: "Python Essentials",
+      link: "https://www.credly.com/badges/84fc8509-cced-4833-82e2-e6579f6b7ea3/public_url",
+      desc:
+        i1 || i2
+          ? "Computer programming concepts, syntax and semantics of the Python language"
+          : "Conceitos de programação de computadores, sintaxe e semântica da linguagem Python",
+      data: "Maio 10, 2023",
     },
   ];
 
